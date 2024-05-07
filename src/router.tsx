@@ -2,7 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import BaseLayout from './components/layouts/BaseLayout';
 import Home from './views/Home';
 import CreateContact from './views/CreateContact';
-import ViewContact from './views/ViewContact';
+import EditContact from './views/EditContact';
 
 export const router = createBrowserRouter([
     {
@@ -19,7 +19,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/contacts/:id/edit',
-                element: <ViewContact />
+                element: <EditContact />
             }
         ]
     }

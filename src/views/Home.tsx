@@ -1,5 +1,6 @@
 import { IoAdd } from "react-icons/io5";
 import { GoPencil } from "react-icons/go";
+import { CiTrash } from "react-icons/ci";
 import usersData from '../utils/users.json';
 import { Link } from "react-router-dom";
 
@@ -37,8 +38,13 @@ export default function Home() {
                                 <td>{user.phone}</td>
                                 <td>{user.company}</td>
                                 <td>
-                                    <Link to={`/contacts/${user.id}/edit`} type="button" className="btn btn-sm btn-outline-primary">
+                                    <Link to={`/contacts/${user.id}/edit`} type="button" className="btn btn-sm btn-primary"
+                                        style={{ marginRight: "5px"}}
+                                    >
                                         <GoPencil/>
+                                    </Link>
+                                    <Link to={`/contacts/${user.id}/edit`} type="button" className="btn btn-sm btn-danger">
+                                        <CiTrash/>
                                     </Link>
                                 </td>
                             </tr>
