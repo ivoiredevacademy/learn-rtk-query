@@ -5,7 +5,7 @@ import CreateContact from './views/CreateContact';
 import ViewContact from './views/ViewContact';
 
 export const router = createBrowserRouter([
-    {   
+    {
         path: '/',
         element: <BaseLayout />,
         children: [
@@ -18,7 +18,7 @@ export const router = createBrowserRouter([
                 element: <CreateContact />
             },
             {
-                path: '/contacts/:id',
+                path: '/contacts/:id/edit',
                 element: <ViewContact />
             }
         ]
