@@ -23,8 +23,6 @@ export default function ContactForm({ initialData, onSubmit } : ContactFormCompo
 
   const [formValues, setFormValues] = useState<ContactData>(getInitialValues());
 
-  console.log(formValues)
-
   function handleInputChange(e: React.ChangeEvent<HTMLInputElement>): void {
     setFormValues({
       ...formValues, [e.target.name]: e.target.value
