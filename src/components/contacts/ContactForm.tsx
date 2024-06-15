@@ -9,7 +9,6 @@ export type ContactFormComponentProps = {
 
 export default function ContactForm({ initialData, onSubmit } : ContactFormComponentProps) {
 
-
   function getInitialValues(): ContactData {
     return initialData || {
       name: "",
@@ -46,7 +45,7 @@ export default function ContactForm({ initialData, onSubmit } : ContactFormCompo
         </div>
         <div className="form-group col-md-6">
           <label htmlFor="email">Email</label>
-          <input type="email" className="form-control" name="email" id="email" placeholder="john.doe@example.com" 
+          <input type="email" className="form-control" name="email" id="email" placeholder="john.doe@example.com"
           onChange={handleInputChange}
           value={formValues.email}
           />
@@ -54,7 +53,7 @@ export default function ContactForm({ initialData, onSubmit } : ContactFormCompo
       </div>
       <div className="form-group my-4">
         <label htmlFor="address">Address</label>
-        <input type="text" className="form-control" id="address" name="address" 
+        <input type="text" className="form-control" id="address" name="address"
                     value={formValues.address}
         placeholder="1234 Main St" onChange={handleInputChange} />
       </div>
@@ -62,18 +61,18 @@ export default function ContactForm({ initialData, onSubmit } : ContactFormCompo
       <div className="form-row row my-4">
         <div className="form-group col-md-6">
           <label htmlFor="phone">Phone</label>
-          <input type="text" className="form-control" id="phone" name="phone"placeholder="+1 510 00 00 00" 
-            onChange={handleInputChange} 
+          <input type="text" className="form-control" id="phone" name="phone"placeholder="+1 510 00 00 00"
+            onChange={handleInputChange}
             value={formValues.phone}
           />
         </div>
 
         <div className="form-group col-md-6">
           <label htmlFor="company">Company</label>
-          <input 
-            type="text" 
-            className="form-control" 
-            id="Google Inc." 
+          <input
+            type="text"
+            className="form-control"
+            id="Google Inc."
             name="company"
             value={formValues.company}
             onChange={handleInputChange}
@@ -82,9 +81,9 @@ export default function ContactForm({ initialData, onSubmit } : ContactFormCompo
 
         <div className="form-group col-md-6 my-2">
           <label htmlFor="website">Website</label>
-          <input 
-            type="text" 
-            className="form-control" 
+          <input
+            type="text"
+            className="form-control"
             value={formValues.website}
             id="https://www.john-doe.com" name="website"
             onChange={handleInputChange}
